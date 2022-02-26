@@ -9,6 +9,7 @@ import CovidStates from "./covidStates";
 import TicketSale from "./TicketSale/TicketSale";
 import DeadJournalist from "./DeadJournalist/DeadJournalist";
 import TennisPlayer from "./TennisPlayer/TennisPlayer";
+import InteractiveViz from "./InteractiveViz/InteractiveViz";
 
 export const App = () => {
   return (
@@ -19,9 +20,15 @@ export const App = () => {
             <li>
               <Link to="/">Home</Link>
             </li>
+            <h1>
+              Assignment 1
+            </h1>
             <li>
               <Link to="/covidStates">Covid States</Link>
             </li>
+            <h1>
+              Assignment 2
+            </h1>
             <li>
               <Link to="/ticketSale">Ticket Sale in Holleywood</Link>
             </li>
@@ -31,6 +38,14 @@ export const App = () => {
             <li>
               <Link to="/tennisPlayer">Women Tennis Player</Link>
             </li>
+            <h1>
+              Assignment 3
+            </h1>
+            <li>
+            <Link to="/interactiveJournalist">
+              Interactive Dead Journalist
+            </Link>
+            </li>
           </ul>
         </nav>
         <Routes>
@@ -38,6 +53,7 @@ export const App = () => {
           <Route path="/ticketSale" element={<TicketSale/>}/>
           <Route path="/deadJournalist" element={<DeadJournalist/>}/>
           <Route path="/tennisPlayer" element={<TennisPlayer/>}/>
+          <Route path="/interactiveJournalist" element={<InteractiveViz/>}/>
         </Routes>
       </div>
     </Router>
