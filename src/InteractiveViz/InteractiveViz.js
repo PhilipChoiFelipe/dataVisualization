@@ -95,12 +95,11 @@ const InteractiveViz = () => {
         .innerRadius(radius * 0.9);
 
     const secondInnerArc = arc().innerRadius(radius * 0.3).outerRadius(radius * 0.5);
-    console.log(sexType);
 
     return (
         <div style={{ marginLeft: marginHoz, marginRight: marginHoz, width: 1000 }}>
             <h1>
-                {pieType} of dead journalists
+                {pieType} of dead journalists with gender ratio
             </h1>
             <div>
                 <button onClick={() => { setData(deathCategory); setSexType(deathCategoryBySex); setObjKey(null); setPieType("Coverages") }}>Coverage</button>
